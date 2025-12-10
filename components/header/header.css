@@ -29,7 +29,7 @@ a:link, a:visited    {
   transition: ease 400ms;
 } 
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .backdrop {
     position: absolute;
     left: 50%;
@@ -50,6 +50,8 @@ a:link, a:visited    {
     );
     pointer-events: none;
   }
+}
+
 .backdrop {
   position: absolute;
   left: 50%;
@@ -69,6 +71,5 @@ a:link, a:visited    {
   to bottom,
   );
   pointer-events: none;
-}
 }
 
