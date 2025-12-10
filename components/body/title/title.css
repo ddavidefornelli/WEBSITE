@@ -2,13 +2,15 @@
   margin: 0 0 16px 0;
 }
 
+.title-wrapper > h1 {
+  font-size: 3rem;
+}
+
+
 .title-github-link {
   transition: ease 400ms;
 }
 
-#name {
-  font-size: 2rem;
-}
 
 .important-info {
   display: flex;
