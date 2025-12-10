@@ -1,0 +1,40 @@
+.title-wrapper {
+  margin: 0 0 16px 0;
+}
+
+.title-github-link {
+  transition: ease 400ms;
+}
+
+#name {
+  font-size: 2rem;
+}
+
+.important-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-github-link:visited, .title-github-link {
+  font-family: 'jetbrains-bold';
+  color: var(--darkgray); 
+
+  text-decoration: none; 
+}
+
+.title-github-link:hover {
+  color: var(--lightgray);
+  text-decoration: none; 
+  transition: ease 400ms;
+} 
+
+.important-info > h3 {
+  color: var(--darkgray);
+}
+
+.important-info ~ p {
+  margin-top: 8px;
+  color: var(--darkgray);
+  font-weight: bold;
+}

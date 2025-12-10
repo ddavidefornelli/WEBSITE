@@ -1,0 +1,28 @@
+
+.wrapper-footer {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrapper-footer > * {
+  margin-top: 16px;
+}
+
+.wrapper-footer > * {
+  font-family: 'jetbrains-bold';
+  color: var(--darkgray); 
+
+  text-decoration: none; 
+}
+
+.wrapper-footer > *:hover {
+  color: var(--lightgray); 
+  text-decoration: none; 
+
+  transition: ease 400ms;
+
+  opacity: 100%;
+} 

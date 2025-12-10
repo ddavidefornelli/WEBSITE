@@ -1,0 +1,55 @@
+.project-wrapper {
+  margin: 16px 0px 16px 0px;
+}
+
+.title {
+  color: var(--black);
+}
+
+.date {
+  color: var(--darkgray);
+  opacity: 60%;
+}
+
+.description {
+  color: var(--darkgray);
+  font-weight: bold;
+}
+
+.title, .date, .description {
+  transition: ease 400ms;
+}
+
+.project-wrapper > a:link, .project-wrapper > a:visited    { 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.project-wrapper:hover ,
+.project-wrapper:hover .title,
+.project-wrapper:hover .date,
+.project-wrapper:hover .description {
+  color: var(--lightgray);
+}
+
+.arrow {
+  display: inline-block;
+  transition: ease 400ms;
+}
+
+.project-wrapper:hover > a > .top > .arrow {
+  transition: ease 400ms;
+  rotate: -45deg;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top > img {
+  margin-left: 16px;
+  width: 16px;
+  height: 16px;
+}

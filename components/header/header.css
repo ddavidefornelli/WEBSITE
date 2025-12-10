@@ -1,0 +1,51 @@
+#links-ul {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  padding: 24px 0 24px 0; 
+}
+
+ul {
+  padding: 0;
+}
+
+#links-ul > li {
+  margin-right: 32px;
+}
+
+#links-ul > li > h4 {
+  transition: ease 400ms;
+}
+
+a:link, a:visited    { 
+  color: var(--darkgrey); text-decoration: none; 
+}
+
+#links-ul > li > h4:hover {
+  color: var(--lightgray); 
+  text-decoration: none; 
+
+  transition: ease 400ms;
+} 
+
+.backdrop {
+ position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--white)
+    hsl(0deg 0% 0%) 0%,
+    transparent 50%
+  );
+  backdrop-filter: blur(16px);
+  mask-image: linear-gradient(
+    to bottom,
+  );
+  pointer-events: none;
+}
