@@ -6,7 +6,7 @@ export default class CustomHeader extends HTMLElement {
   }
 
   async loadHTML() {
-    const res = await fetch('./components/header/header.html');
+    const res = await fetch('./header.html');
     const html = await res.text();
     this.innerHTML = html;
   }

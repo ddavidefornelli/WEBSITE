@@ -5,7 +5,7 @@ export default class CustomBody extends HTMLElement {
   }
 
   async loadHTML() {
-    const res = await fetch('./components/body/customBody/bodyComponent.html');
+    const res = await fetch('./bodyComponent.html');
     const html = await res.text();
     this.innerHTML = html;
   }
