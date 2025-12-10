@@ -19,11 +19,11 @@ export default class Project extends HTMLElement {
 <div class="project-wrapper">
   <a href="">
     <div class="top">
-    <h3 class='title'>${this.getTitle()}</h3>
-      <h3 class='arrow'>></h3>
+    <h2 class='title'>${this.getTitle()}</h2>
+      <h2 class='arrow'>></h2>
     </div>
-    <h5 class='date'>${this.getDate()}</h4>
-      <p class='description'>${this.getDescription()}</p>
+    <h5 class='date'>${this.getDate()}</h5>
+      <h3 class='description'>${this.getDescription()}</h3>
   </a>
 </div>
 `;

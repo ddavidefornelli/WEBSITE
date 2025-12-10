@@ -14,8 +14,9 @@
 .wrapper-footer > * {
   font-family: 'jetbrains-bold';
   color: var(--darkgray); 
-
   text-decoration: none; 
+
+  transition: ease 600ms;
 }
 
 .wrapper-footer > *:hover {

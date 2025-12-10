@@ -1,7 +1,5 @@
-custom-body > h2 {
+custom-body > h1 {
   margin-top: 32px;
-}
+  margin-bottom: -16px;
 
-.projects-title {
-  font-size: 32px;
 }
