@@ -43,7 +43,7 @@ a:link, a:visited    {
     hsl(0deg 0% 0%) 0%,
     transparent 50%
   );
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(24px);
   mask-image: linear-gradient(
     to bottom,
   );
