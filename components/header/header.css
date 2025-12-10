@@ -29,8 +29,31 @@ a:link, a:visited    {
   transition: ease 400ms;
 } 
 
+@media (max-width: 768px) {
+  .backdrop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(
+    to bottom,
+    var(--white)
+    hsl(0deg 0% 0%) 0%,
+    transparent 50%
+    );
+    backdrop-filter: blur(32px);
+    mask-image: linear-gradient(
+    to bottom,
+    );
+    pointer-events: none;
+  }
+}
+
 .backdrop {
- position: absolute;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
@@ -38,14 +61,14 @@ a:link, a:visited    {
   bottom: 0;
   height: 100%;
   background: linear-gradient(
-    to bottom,
-    var(--white)
-    hsl(0deg 0% 0%) 0%,
-    transparent 50%
+  to bottom,
+  var(--white)
+  hsl(0deg 0% 0%) 0%,
+  transparent 50%
   );
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(16px);
   mask-image: linear-gradient(
-    to bottom,
+  to bottom,
   );
   pointer-events: none;
 }
