@@ -1,14 +1,14 @@
 
 .wrapper-footer {
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-top: var(--big-margin);
+  margin-bottom: var(--small-margin);
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
 .wrapper-footer > * {
-  margin-top: 16px;
+  margin-top: var(--medium-margin);
 }
 
 .wrapper-footer > * {
@@ -24,6 +24,4 @@
   text-decoration: none; 
 
   transition: ease 400ms;
-
-  opacity: 100%;
 } 

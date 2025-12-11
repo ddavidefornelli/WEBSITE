@@ -1,5 +1,5 @@
 .project-wrapper {
-  margin: 16px 0px 16px 0px;
+  margin: var(--small-margin) 0 var(--small-margin) 0;
 }
 
 .title {
@@ -7,8 +7,7 @@
 }
 
 .date {
-  color: var(--darkgray);
-  opacity: 60%;
+  color: var(--lightgray);
 }
 
 .description {
@@ -33,7 +32,6 @@
 }
 
 .arrow {
-  display: inline-block;
   transition: ease 400ms;
 }
 
@@ -47,11 +45,3 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.top > img {
-  margin-left: 16px;
-  width: 16px;
-  height: 16px;
-}
-
-

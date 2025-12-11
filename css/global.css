@@ -28,8 +28,35 @@
   --primary: #0087D1;
   --black: #000000;
   --lightgray: #A4A6A8;
+  --small-margin: 8px;
+  --medium-margin: 16px;
+  --medium-big-margin: 24px;
+  --big-margin: 32px;
 
   font-family: 'jetbrains-regular';
+}
+
+h1 {
+  font-size: 2.0rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+
+@media (max-width: 576px) {
+
+  h1 { font-size: 1.8rem; }
+
+  h2 { font-size: 1.3rem; }
+
+  h3 { font-size: 1rem; }
+
 }
 
 body {
@@ -49,31 +76,8 @@ body {
   padding: 16px;
 }
 
-
 custom-header {
   position: sticky;
   top: 0;
 }
 
-h1 {
-  font-size: 2.0rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1rem;
-}
-
-
-@media (max-width: 768px) {
-
-  h1 { font-size: 1.8rem; }
-
-  h2 { font-size: 1.3rem; }
-
-  h3 { font-size: 1.1rem; }
-
-}
