@@ -1,0 +1,47 @@
+project-project > h1 {
+  background-color: blue;
+}
+
+.project-project-wrapper {
+  border: 2px solid var(--darkgray);
+  transition: ease 400ms;
+}
+
+.project-project-wrapper:hover {
+  border: 2px solid var(--primary);
+  transition: ease 400ms;
+}
+
+
+.title > a {
+  transition: ease 400ms;
+}
+
+.title > a:hover {
+  transition: ease 400ms;
+  color: var(--lightgray);
+}
+
+.technologies {
+  display: flex;
+  margin: var(--small-margin) 0 var(--small-margin) 0
+}
+
+.title ~ p {
+  margin-top: 2px;
+}
+
+.title-date {
+  display: flex;
+  align-items: end;
+}
+
+.title-date ~ a {
+  translate: 0 -6px;
+}
+
+.title-date > h3 {
+  margin-left: var(--medium-margin);
+  translate: 0 -6px;
+}
+
