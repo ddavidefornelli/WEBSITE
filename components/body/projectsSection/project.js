@@ -6,7 +6,7 @@ export default class Project extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['title, date, description'];
+    return ['title, date, description', 'href'];
   }
 
   async attributeChangeCallback(oldValue, newValue) {
@@ -17,7 +17,7 @@ export default class Project extends HTMLElement {
     this.innerHTML = `
 
 <div class="project-wrapper">
-  <a href="">
+  <a href='${this.getHref()}'>
     <div class="top">
     <h2 class='title'>${this.getTitle()}</h2>
       <h2 class='arrow'>></h2>
@@ -30,6 +30,8 @@ export default class Project extends HTMLElement {
   }
 
   getTitle() { return this.getAttribute('title'); }
+
+  getHref() { return this.getAttribute('href'); }
 
   getDate() { return this.getAttribute('date'); }
 

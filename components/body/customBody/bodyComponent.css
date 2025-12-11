@@ -1,3 +1,18 @@
-custom-body > h1 {
+custom-body > .important-info {
   margin-top: var(--big-margin);
 }
+
+custom-body > .important-info {
+  align-items: center;
+}
+
+#all-projects-link:hover {
+  color: var(--lightgray);
+  transition: ease 400ms;
+}
+
+#all-projects-link {
+  color: var(--darkgray);
+  transition: ease 400ms;
+}
+

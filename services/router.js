@@ -1,12 +1,10 @@
 const Home = () => '<custom-body></custom-body>';
 const Projects = () => 'PROGETTI';
-const Blog = () => 'benvenuto in blog';
 const NotFound = () => '<h1>404</h1><p>Pagina non trovata.</p><a href="/" data-link>Torna alla Home</a>';
 
 const router = async () => {
   const routes = [
     { path: '/', view: Home },
-    { path: '/blog', view: Blog },
     { path: '/projects', view: Projects },
   ];
 

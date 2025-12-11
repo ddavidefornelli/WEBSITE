@@ -1,20 +1,32 @@
 #links-ul {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   list-style: none;
   padding: var(--medium-margin) 0 var(--medium-margin) 0; 
+}
+
+.internal-links {
+  display: flex;
+}
+
+.external-links {
+  display: flex;
 }
 
 ul {
   padding: 0;
 }
 
-#links-ul > li {
+#links-ul > .external-links > * {
+  margin-left: var(--big-margin);
+}
+
+#links-ul > .internal-links > * {
   margin-right: var(--big-margin);
 }
 
-#links-ul > li > h4 {
+#links-ul > .internal-links > h4 {
   transition: ease 400ms;
 }
 
@@ -22,7 +34,7 @@ a:link, a:visited    {
   color: var(--darkgrey); text-decoration: none; 
 }
 
-#links-ul > li > h4:hover {
+#links-ul > .internal-links > *:hover {
   color: var(--lightgray); 
   text-decoration: none; 
 
