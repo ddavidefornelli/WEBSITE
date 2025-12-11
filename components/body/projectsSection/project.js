@@ -20,7 +20,6 @@ export default class Project extends HTMLElement {
   <a href='${this.getHref()}'>
     <div class="top">
     <h2 class='title'>${this.getTitle()}</h2>
-      <h2 class='arrow'>></h2>
     </div>
     <h5 class='date'>${this.getDate()}</h5>
       <h3 class='description'>${this.getDescription()}</h3>

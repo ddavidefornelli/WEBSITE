@@ -1,13 +1,24 @@
-custom-body > .important-info {
+custom-body > .title {
   margin-top: var(--big-margin);
 }
 
-custom-body > .important-info {
-  align-items: center;
+custom-body > .title {
+  align-items: end;
+}
+
+.title {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.title > h3 {
+  translate: 0 -3px;
 }
 
 #all-projects-link:hover {
-  color: var(--lightgray);
+  color: var(--primary);
   transition: ease 400ms;
 }
 

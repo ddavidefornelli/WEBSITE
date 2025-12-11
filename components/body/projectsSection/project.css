@@ -1,5 +1,8 @@
 .project-wrapper {
   margin: var(--small-margin) 0 var(--small-margin) 0;
+  padding: 0 var(--medium-margin) 0 var(--medium-margin);
+  border-left: 4px solid black;
+  transition: ease 800ms;
 }
 
 .title {
@@ -24,24 +27,16 @@
   text-decoration: none; 
 }
 
-.project-wrapper:hover ,
+.project-wrapper:hover,
 .project-wrapper:hover .title,
 .project-wrapper:hover .date,
 .project-wrapper:hover .description {
-  color: var(--lightgray);
-}
-
-.arrow {
+  border-color: var(--primary);
   transition: ease 400ms;
-}
-
-.project-wrapper:hover > a > .top > .arrow {
-  transition: ease 400ms;
-  rotate: -45deg;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
+

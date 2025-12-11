@@ -6,12 +6,6 @@
   transition: ease 400ms;
 }
 
-.important-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .title-github-link:visited, .title-github-link {
   font-family: 'jetbrains-bold';
   color: var(--darkgray); 
@@ -20,18 +14,16 @@
 }
 
 .title-github-link:hover {
-  color: var(--lightgray);
+  color: var(--primary);
   text-decoration: none; 
   transition: ease 400ms;
 } 
 
-.important-info > h2 {
+.title-wrapper > h2 {
   color: var(--darkgray);
-  margin-top: var(--small-margin);
 }
 
-.important-info ~ p {
-  margin-top: var(--small-margin);
+p {
   color: var(--darkgray);
   font-weight: bold;
 }

@@ -20,7 +20,7 @@
 }
 
 .wrapper-footer > *:hover {
-  color: var(--lightgray); 
+  color: var(--primary); 
   text-decoration: none; 
 
   transition: ease 400ms;
