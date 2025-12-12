@@ -7,12 +7,6 @@ project-project > h1 {
   transition: ease 400ms;
 }
 
-.project-project-wrapper:hover {
-  border: 2px solid var(--primary);
-  transition: ease 400ms;
-}
-
-
 .title > a {
   transition: ease 400ms;
 }

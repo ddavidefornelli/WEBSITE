@@ -1,5 +1,5 @@
 const Home = () => '<custom-body></custom-body>';
-const Projects = () => '<project-project></project-project>';
+const Projects = () => '<projects-projects></projects-projects>';
 const NotFound = () => '<h1>404</h1><p>Pagina non trovata.</p><a href="/" data-link>Torna alla Home</a>';
 
 const router = async () => {
