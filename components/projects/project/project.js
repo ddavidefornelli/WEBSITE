@@ -27,7 +27,7 @@ export default class ProjectProjects extends HTMLElement {
     <div class="technologies">
       <h3>TECHNOLOGIES: ${this.getTechnologies()}</h3>
     </div>
-    <video src="${this.getVideoPath()}" type='video/mp4' controls controlslist="nodownload nofullscreen" muted preload></video>
+    <video src="${this.getVideoPath()}" type='video/mp4' controls controlslist="nodownload nofullscreen" muted></video>
 </div>
 `;
   }
