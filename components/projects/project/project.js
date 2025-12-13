@@ -19,10 +19,10 @@ export default class ProjectProjects extends HTMLElement {
     <div class="title">
       <div class="title-date">
         <h1>${this.getTitle()}</h1>
+  <h3 class="date">${this.getDate()}</h3>
       </div>
       <a href="${this.getHref()}"><h3>LINK</h3></a>
     </div>
-  <h3 class="date">${this.getDate()}</h3>
     <p class="description">${this.getDescription()}</p>
     <div class="technologies">
       <h3>TECHNOLOGIES: ${this.getTechnologies()}</h3>
