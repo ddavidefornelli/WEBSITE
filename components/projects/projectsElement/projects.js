@@ -3,18 +3,18 @@ import './projects.css';
 
 export default class Projects extends HTMLElement {
   connectedCallback() {
-    this.render()
+    this.render();
   }
 
   render() {
-    data.map(object => {
+    data.forEach((object) => {
       const project = document.createElement('project-project');
-      project.className = `project-${object.title}`;
-      for(let key in object) {
-        project.setAttribute(key, object[key])
+      project.className = `project-project-${object.title}`;
+      for (const key in object) {
+        project.setAttribute(key, object[key]);
       }
       this.appendChild(project);
-    })
+    });
   }
 }
 

@@ -3,7 +3,6 @@ project-project > h1 {
 }
 
 .project-project-wrapper {
-  border: 2px solid var(--darkgray);
   transition: ease 400ms;
 }
 
