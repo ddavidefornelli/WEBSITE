@@ -6,12 +6,6 @@
   transition: ease 400ms;
 }
 
-.title-github-link:visited, .title-github-link {
-  color: var(--darkgray); 
-
-  text-decoration: none; 
-}
-
 .title-github-link:hover {
   color: var(--primary);
   text-decoration: none; 

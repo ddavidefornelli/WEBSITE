@@ -4,7 +4,6 @@
   justify-content: space-between;
   list-style: none;
   padding: var(--medium-margin) 0 var(--medium-margin) 0; 
-
 }
 
 .internal-links {
@@ -20,11 +19,13 @@ ul {
 }
 
 #links-ul > .external-links > * {
+  transition: 400ms ease;
   margin-left: var(--big-margin);
 }
 
 #links-ul > .internal-links > * {
   margin-right: var(--big-margin);
+  transition: 400ms ease;
 }
 
 #links-ul > .internal-links > h4 {

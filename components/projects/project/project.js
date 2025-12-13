@@ -20,14 +20,14 @@ export default class ProjectProjects extends HTMLElement {
       <div class="title-date">
         <h1>${this.getTitle()}</h1>
       </div>
-      <a href="${this.getHref()}"><h3>GITHUB</h3></a>
+      <a href="${this.getHref()}"><h3>LINK</h3></a>
     </div>
   <h3 class="date">${this.getDate()}</h3>
     <p class="description">${this.getDescription()}</p>
     <div class="technologies">
       <h3>TECHNOLOGIES: ${this.getTechnologies()}</h3>
     </div>
-    <video src="${this.getVideoPath()}" type='video/mp4' autoplay muted preload></video>
+    <video src="${this.getVideoPath()}" type='video/mp4' controls controlslist="nodownload nofullscreen" muted preload></video>
 </div>
 `;
   }
