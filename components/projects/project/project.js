@@ -16,18 +16,16 @@ export default class ProjectProjects extends HTMLElement {
   render() {
     this.innerHTML = `
 <div class="project-project-wrapper">
-    <div class="title">
-      <div class="title-date">
-        <h1>${this.getTitle()}</h1>
-  <h3 class="date">${this.getDate()}</h3>
-      </div>
-      <a href="${this.getHref()}"><h3>LINK</h3></a>
-    </div>
-    <p class="description">${this.getDescription()}</p>
-    <div class="technologies">
-      <h3>TECHNOLOGIES: ${this.getTechnologies()}</h3>
-    </div>
-    <video src="${this.getVideoPath()}" type='video/mp4' controls controlslist="nodownload nofullscreen" muted></video>
+  <div class="title">
+    <h1>${this.getTitle()}</h1>
+    <a href="${this.getHref()}"><h3>LINK</h3></a>
+  </div>
+  <p class="description">${this.getDescription()}</p>
+  <div class="technologies">
+    <h3>TECHNOLOGIES: ${this.getTechnologies()}</h3>
+    <h3 class="project-date">${this.getDate()}</h3>
+  </div>
+  <video src="${this.getVideoPath()}" type='video/mp4' controls controlslist="nodownload nofullscreen" muted></video>
 </div>
 `;
   }

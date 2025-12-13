@@ -23,12 +23,12 @@
 }
 
 :root {
-
   --darkgray: #4B4B4B;
+  --lightgray: #A4A6A8;
   --white: #FFFFFF;
   --primary: #A4A6A8;
   --black: #000000;
-  --lightgray: #A4A6A8;
+
   --small-margin: 8px;
   --medium-margin: 16px;
   --medium-big-margin: 24px;
