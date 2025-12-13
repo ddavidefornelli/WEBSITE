@@ -35,12 +35,6 @@ export default class Project extends HTMLElement {
   getDate() { return this.getAttribute('date'); }
 
   getDescription() { return this.getAttribute('description'); }
-
-  setTitle(value) { return this.setAttribute('title', value); }
-
-  setDate(value) { return this.setAttribute('date', value); }
-
-  setDescription(value) { return this.setAttribute('description', value); }
 }
 
 customElements.define('homepage-project', Project);

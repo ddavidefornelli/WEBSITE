@@ -7,14 +7,15 @@ custom-body > .title {
 }
 
 .title {
-
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
 
-.title > h3 {
+.title > h3 > a {
   translate: 0 -3px;
+  position: relative;
+  z-index: 1;
 }
 
 #all-projects-link:hover {
@@ -23,7 +24,8 @@ custom-body > .title {
 }
 
 #all-projects-link {
-  color: var(--darkgray);
   transition: ease 400ms;
+  
+  position: relative;
+  z-index: 1;
 }
-

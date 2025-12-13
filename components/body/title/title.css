@@ -7,7 +7,6 @@
 }
 
 .title-github-link:visited, .title-github-link {
-  font-family: 'jetbrains-bold';
   color: var(--darkgray); 
 
   text-decoration: none; 
@@ -24,6 +23,7 @@
 }
 
 p {
+  margin-top: var(--small-margin);
   color: var(--darkgray);
   font-weight: bold;
 }

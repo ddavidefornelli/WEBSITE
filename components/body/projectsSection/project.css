@@ -1,7 +1,10 @@
 .project-wrapper {
   margin: var(--small-margin) 0 var(--small-margin) 0;
-  padding: 0 var(--medium-margin) 0 var(--medium-margin);
-  border-left: 4px solid black;
+  transition: ease 800ms;
+}
+
+.project-wrapper:hover {
+  translate: 20px;
   transition: ease 800ms;
 }
 
@@ -15,23 +18,9 @@
 
 .description {
   color: var(--darkgray);
-  font-weight: bold;
 }
 
 .title, .date, .description {
-  transition: ease 400ms;
-}
-
-.project-wrapper > a:link, .project-wrapper > a:visited    { 
-  color: inherit; 
-  text-decoration: none; 
-}
-
-.project-wrapper:hover,
-.project-wrapper:hover .title,
-.project-wrapper:hover .date,
-.project-wrapper:hover .description {
-  border-color: var(--primary);
   transition: ease 400ms;
 }
 
