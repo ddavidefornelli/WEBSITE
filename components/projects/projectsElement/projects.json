@@ -1,18 +1,18 @@
 [
   {
     "title": "SUDOKU",
-    "date": "(12/12 - 12/12)",
+    "date": "(08/25 - 08/25)",
     "description": "UN GIOCO DEL GIOCO SUDOKU FANTASTICO",
     "technologies": "JS, HTML, CSS",
     "videoPath": "/sudoku.mp4",
     "href": "youtube.com"
   },
   {
-    "title": "SUDOKU",
-    "date": "(12/12 - 12/12)",
-    "description": "UN GIOCO DEL GIOCO SUDOKU FANTASTICO",
+    "title": "CHESS + ENGINE",
+    "date": "12/25 - 12/25",
+    "description": "TAUGHT ME HOW TO MANAGE THE DOM, AND MORE COMPLEX CODE",
     "technologies": "JS, HTML, CSS",
-    "videoPath": "/sudoku.mp4",
+    "videoPath": "/chess.mp4",
     "href": "youtube.com"
   }
 ]
