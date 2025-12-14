@@ -23,6 +23,8 @@ body {
   cursor: url('/public/dot-svgrepo-com.svg');
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  
+  text-rendering: optimizeLegibility;
 }
 
 /* 6. Improve media defaults */

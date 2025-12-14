@@ -1,9 +1,14 @@
 #links-ul {
   position: relative;
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  padding: var(--medium-margin) 0 var(--medium-margin) 0; 
+  padding: 0;
+}
+
+
+#links-ul > * {
+  padding: 18px;
 }
 
 .internal-links {
@@ -12,10 +17,6 @@
 
 .external-links {
   display: flex;
-}
-
-ul {
-  padding: 0;
 }
 
 #links-ul > .external-links > * {
@@ -40,14 +41,12 @@ a:link, a:visited    {
   color: var(--primary); 
   text-decoration: none; 
 
-  transition: ease 400ms;
-} 
+  transition: ease 400ms; } 
 
 @media (max-width: 576px) {
   .backdrop {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     width: 100vw;
     top: 0;
     bottom: 0;
@@ -68,8 +67,8 @@ a:link, a:visited    {
 
 .backdrop {
   position: absolute;
-  left: 50%;
   transform: translateX(-50%);
+  left: 50%;
   width: 100vw;
   top: 0;
   bottom: 0;
