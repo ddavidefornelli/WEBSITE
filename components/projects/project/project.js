@@ -20,10 +20,10 @@ export default class ProjectProjects extends HTMLElement {
     <h1>${this.getTitle()}</h1>
     <a href="${this.getHref()}"><h3>LINK</h3></a>
   </div>
+  <h3 class="project-date">${this.getDate()}</h3>
   <p class="description">${this.getDescription()}</p>
   <div class="technologies">
     <h3>TECHNOLOGIES: ${this.getTechnologies()}</h3>
-    <h3 class="project-date">${this.getDate()}</h3>
   </div>
   <video src="${this.getVideoPath()}" type='video/mp4' controls controlslist="nodownload nofullscreen" muted></video>
 </div>
