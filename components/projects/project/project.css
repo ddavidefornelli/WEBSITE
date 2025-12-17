@@ -17,8 +17,6 @@ project-project > h1 {
 }
 
 .technologies {
-  display: flex;
-  justify-content: space-between;
   margin: var(--small-margin) 0 var(--small-margin) 0
 }
 
@@ -42,4 +40,15 @@ project-project > h1 {
 
 .project-date {
   color: var(--lightgray);
+}
+
+.project-achivements,
+.project-description {
+  color: var(--darkgray);
+  opacity: 80%;
+}
+
+.project-achivements-title,
+.project-description-title {
+  color: black;
 }

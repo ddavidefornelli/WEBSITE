@@ -4,7 +4,7 @@
     "date": "08/25 - 08/25",
     "description": "UN GIOCO DEL GIOCO SUDOKU FANTASTICO",
     "technologies": "C",
-    "videoPath": "/sudoku.mp4",
+    "achivements": "/sudoku.mp4",
     "href": "youtube.com"
   },
   {
@@ -12,7 +12,7 @@
     "date": "12/25 - 12/25",
     "description": "TAUGHT ME HOW TO MANAGE THE DOM, AND MORE COMPLEX CODE",
     "technologies": "JS, HTML, CSS",
-    "videoPath": "/chess.mp4",
+    "achivements": "/chess.mp4",
     "href": "youtube.com"
   },
   {
@@ -20,7 +20,7 @@
     "date": "12/25 - 12/25",
     "description": "A COOL PROJECT",
     "technologies": "JS, HTML, CSS",
-    "videoPath": "/noscreenshot.mp4",
+    "achivements": "/noscreenshot.mp4",
     "href": "youtube.com"
   }
 ]

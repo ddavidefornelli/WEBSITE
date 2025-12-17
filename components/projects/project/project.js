@@ -15,18 +15,16 @@ export default class ProjectProjects extends HTMLElement {
 
   render() {
     this.innerHTML = `
-<div class="project-project-wrapper">
-  <div class="title">
-    <h1>${this.getTitle()}</h1>
-    <a href="${this.getHref()}"><h3>LINK</h3></a>
+  <div class="project-project-wrapper">
+    <div class="title">
+      <h1>${this.getTitle()}</h1>
+      <a href="${this.getHref()}"><h3>LINK</h3></a>
+    </div>
+    <h3 class="project-date">${this.getDate()}</h3>
+    <p class="project-description"><span class="project-description-title">DESCRIPTION: </span> ${this.getDescription()}</p>
+    <p class="project-description"><span class="project-achivements-title">ACHIVEMENTS: </span>${this.getAchivements()}</p>
+    <p class="project-description"><span class="project-achivements-title">TECHNOLOGIES: </span>${this.getTechnologies()}</p>
   </div>
-  <h3 class="project-date">${this.getDate()}</h3>
-  <p class="description">${this.getDescription()}</p>
-  <div class="technologies">
-    <h3>TECHNOLOGIES: ${this.getTechnologies()}</h3>
-  </div>
-  <video src="${this.getVideoPath()}" type='video/mp4' controls controlslist="nodownload nofullscreen" muted></video>
-</div>
 `;
   }
 
@@ -38,7 +36,7 @@ export default class ProjectProjects extends HTMLElement {
 
   getHref() { return this.getAttribute('href'); }
 
-  getVideoPath() { return this.getAttribute('videoPath'); }
+  getAchivements() { return this.getAttribute('achivements'); }
 
   getTechnologies() { return this.getAttribute('technologies'); }
 }
