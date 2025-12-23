@@ -18,7 +18,7 @@ export default class Project extends HTMLElement {
 
 <div class="project-wrapper">
   <a href='${this.getHref()}'>
-    <div class="top">
+    <div class='top'>
     <h2 class='title'>${this.getTitle()}</h2>
     </div>
     <h5 class='date'>${this.getDate()}</h5>

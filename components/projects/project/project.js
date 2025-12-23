@@ -17,7 +17,7 @@ export default class ProjectProjects extends HTMLElement {
     this.innerHTML = `
   <div class="project-project-wrapper">
     <div class="title">
-      <h1>${this.getTitle()}</h1>
+      <h1 class="silver">${this.getTitle()}</h1>
       <a href="${this.getHref()}"><h3>LINK</h3></a>
     </div>
     <h3 class="project-date">${this.getDate()}</h3>

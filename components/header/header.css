@@ -34,13 +34,22 @@
 }
 
 a:link, a:visited    { 
-  color: var(--darkgrey); text-decoration: none; 
+  color: var(--lightgray);
+  text-decoration: none; 
+}
+
+a {
+  color: var(--lightgray);
+  transition: 800ms ease;
+}
+
+a:hover {
+  color: var(--darkgray);
+  transition: 800ms ease;
 }
 
 #links-ul > .internal-links > *:hover {
-  color: var(--primary); 
   text-decoration: none; 
-
   transition: ease 400ms; } 
 
 @media (max-width: 576px) {
@@ -53,7 +62,7 @@ a:link, a:visited    {
     height: 100%;
     background: linear-gradient(
     to bottom,
-    var(--white)
+    var(--black)
     hsl(0deg 0% 0%) 0%,
     transparent 50%
     );
@@ -75,7 +84,7 @@ a:link, a:visited    {
   height: 100%;
   background: linear-gradient(
   to bottom,
-  var(--white)
+  var(--black)
   hsl(0deg 0% 0%) 0%,
   transparent 50%
   );

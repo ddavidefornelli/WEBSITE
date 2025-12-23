@@ -8,12 +8,12 @@ project-project > h1 {
 
 .title > a {
   transition: ease 400ms;
-  color: var(--darkgray);
+  color: var(--lightgray);
 }
 
 .title > a:hover {
   transition: ease 400ms;
-  color: var(--lightgray);
+  color: var(--darkgray);
 }
 
 .technologies {
@@ -50,5 +50,5 @@ project-project > h1 {
 
 .project-achivements-title,
 .project-description-title {
-  color: black;
+  color: white;
 }
