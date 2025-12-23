@@ -25,7 +25,7 @@ custom-body > .title {
 
 #all-projects-link {
   transition: ease 400ms;
-  color: var(--darkgray);
+  color: black;
   
   position: relative;
   z-index: 1;
