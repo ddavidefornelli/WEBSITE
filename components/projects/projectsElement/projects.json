@@ -2,25 +2,26 @@
   {
     "title": "SUDOKU",
     "date": "08/25 - 08/25",
-    "description": "UN GIOCO DEL GIOCO SUDOKU FANTASTICO",
+    "description": 
+    "A SIMPLE SUDOKU GAME IN THE TERMINAL",
     "technologies": "C",
-    "achivements": "/sudoku.mp4",
+    "achivements": "LEARNED A LOT ABOUT MEMORY MANAGMENT AND THE BACKTRACKING ALGORITHM",
     "href": "youtube.com"
   },
   {
     "title": "CHESS ENGINE",
     "date": "12/25 - 12/25",
-    "description": "TAUGHT ME HOW TO MANAGE THE DOM, AND MORE COMPLEX CODE",
-    "technologies": "JS, HTML, CSS",
-    "achivements": "/chess.mp4",
+    "description": "CHESS GAME THAT INCLUDES A CHESS ENGINE&nbsp; THE ENGINE BOT HAS AN ELO AROUND 2200",
+    "technologies": "JS&nbsp; HTML&nbsp; CSS",
+    "achivements": "FIRST REAL MID SIZED PROJECT IN JS&nbsp; NOW I UNDERSTAND WHY PEOPLE LOVE TYPESCRIPT",
     "href": "youtube.com"
   },
   {
     "title": "NO SCREENSHOT",
     "date": "12/25 - 12/25",
-    "description": "A COOL PROJECT",
-    "technologies": "JS, HTML, CSS",
-    "achivements": "/noscreenshot.mp4",
+    "description": "A WORD THAT YOU CAN READ BUT ITS IMPOSSIBLE TO SCREENSHOT",
+    "technologies": "JS&nbsp; HTML&nbsp; CSS",
+    "achivements": "JUST A COOL PROJECT &nbsp;NOT VERY COMPLEX STUFF",
     "href": "youtube.com"
   }
 ]
