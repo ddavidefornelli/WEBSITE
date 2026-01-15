@@ -13,15 +13,15 @@
 
 .wrapper-footer > * {
   font-family: 'jetbrains-bold';
-  color: var(--darkgray); 
-  text-decoration: none; 
+  color: var(--darkgray);
+  text-decoration: none;
 
-  transition: ease 600ms;
+  transition: ease 200ms;
 }
 
 .wrapper-footer > *:hover {
-  color: var(--primary); 
-  text-decoration: none; 
+  color: var(--primary);
+  text-decoration: none;
 
-  transition: ease 400ms;
+  transition: ease 200ms;
 } 

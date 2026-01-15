@@ -3,17 +3,17 @@ project-project > h1 {
 }
 
 .project-project-wrapper {
-  transition: ease 400ms;
+  transition: ease 200ms;
 }
 
 .title > a {
-  transition: ease 400ms;
+  transition: ease 200ms;
   color: var(--lightgray);
 }
 
 .title > a:hover {
-  transition: ease 400ms;
-  color: var(--darkgray);
+  transition: ease 200ms;
+  color: var(--primary);
 }
 
 .technologies {
@@ -49,13 +49,23 @@ project-project > h1 {
   margin-bottom: 4px;
 }
 
-.project-achivements,
-.project-description {
-  color: var(--darkgray);
-  opacity: 80%;
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.project-achivements-title,
-.project-description-title {
+.project-row {
+  display: flex;
+}
+
+.project-label {
   color: white;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.project-value {
+  color: var(--darkgray);
+  opacity: 80%;
 }

@@ -18,12 +18,23 @@ export default class ProjectProjects extends HTMLElement {
   <div class="project-project-wrapper">
     <div class="title">
       <h1 class="silver">${this.getTitle()}</h1>
-      <a href="${this.getHref()}"><h3>LINK</h3></a>
+      <a href="${this.getHref()}"><h3>Link</h3></a>
     </div>
     <h3 class="project-date">${this.getDate()}</h3>
-    <p class="project-description"><span class="project-description-title">DESCRIPTION:&nbsp;</span> ${this.getDescription()}</p>
-    <p class="project-description"><span class="project-achivements-title">ACHIVEMENTS:&nbsp;</span>${this.getAchivements()}</p>
-    <p class="project-description"><span class="project-achivements-title">TECH STACK:&nbsp;&nbsp;</span>${this.getTechnologies()}</p>
+    <div class="project-details">
+      <div class="project-row">
+        <span class="project-label">Description:</span>
+        <span class="project-value">${this.getDescription()}</span>
+      </div>
+      <div class="project-row">
+        <span class="project-label">Achievements:</span>
+        <span class="project-value">${this.getAchivements()}</span>
+      </div>
+      <div class="project-row">
+        <span class="project-label">Tech Stack:</span>
+        <span class="project-value">${this.getTechnologies()}</span>
+      </div>
+    </div>
   </div>
 `;
   }

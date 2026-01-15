@@ -1,33 +1,32 @@
-
 @font-face {
-  font-family: 'jetbrains-regular'; 
+  font-family: 'jetbrains-regular';
   src: url('/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
-  font-display: swap; 
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'jetbrains-medium'; 
+  font-family: 'jetbrains-medium';
   src: url('/fonts/webfonts/JetBrainsMono-Medium.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap; 
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'jetbrains-bold'; 
+  font-family: 'jetbrains-bold';
   src: url('/fonts/webfonts/JetBrainsMono-Bold.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
-  font-display: swap; 
+  font-display: swap;
 }
 
 :root {
   --darkgray: #A4A6A8;
   --lightgray: #4B4B4B;
   --white: #FFFFFF;
-  --primary: #A4A6A8;
+  --primary: #FF5500;
   --black: #1a1a1a;
 
   --small-margin: 8px;

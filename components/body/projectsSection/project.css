@@ -1,11 +1,11 @@
 .project-wrapper {
   margin: var(--small-margin) 0 var(--small-margin) 0;
-  transition: ease 800ms;
+  transition: ease 400ms;
 }
 
 .project-wrapper:hover {
   translate: 20px;
-  transition: ease 800ms;
+  transition: ease 400ms;
 }
 
 .title {
@@ -22,7 +22,7 @@
 }
 
 .title, .date, .description {
-  transition: ease 400ms;
+  transition: ease 800ms;
 }
 
 .top {

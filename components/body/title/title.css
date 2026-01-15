@@ -3,13 +3,13 @@
 }
 
 .title-github-link {
-  transition: ease 400ms;
+  transition: ease 200ms;
 }
 
 .title-github-link:hover {
   color: var(--primary);
-  text-decoration: none; 
-  transition: ease 400ms;
+  text-decoration: none;
+  transition: ease 200ms;
 } 
 
 .title-wrapper > h2 {
@@ -23,8 +23,25 @@ p {
 }
 
 .silver {
- font-weight: 900;
+  font-weight: 900;
   background: linear-gradient(135deg, #C0C0C0 0%, #F5F5F5 25%, #808080 50%, #C0C0C0 75%, #F5F5F5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;}
+  background-clip: text;
+}
+
+.cursor {
+  font-weight: 400;
+  background: none;
+  -webkit-text-fill-color: var(--primary);
+  opacity: 1;
+}
+
+.cursor.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

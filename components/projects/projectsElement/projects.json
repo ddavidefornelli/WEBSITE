@@ -1,27 +1,26 @@
 [
   {
-    "title": "SUDOKU",
+    "title": "Sudoku",
     "date": "08/25 - 08/25",
-    "description": 
-    "A SIMPLE SUDOKU GAME IN THE TERMINAL",
+    "description": "A simple sudoku game in the terminal",
     "technologies": "C",
-    "achivements": "LEARNED A LOT ABOUT MEMORY MANAGMENT AND THE BACKTRACKING ALGORITHM",
+    "achivements": "Learned a lot about memory management and the backtracking algorithm",
     "href": "youtube.com"
   },
   {
-    "title": "CHESS ENGINE",
+    "title": "Chess Engine",
     "date": "12/25 - 12/25",
-    "description": "CHESS GAME THAT INCLUDES A CHESS ENGINE&nbsp; THE ENGINE BOT HAS AN ELO AROUND 2200",
-    "technologies": "JS&nbsp; HTML&nbsp; CSS",
-    "achivements": "FIRST REAL MID SIZED PROJECT IN JS&nbsp; NOW I UNDERSTAND WHY PEOPLE LOVE TYPESCRIPT",
+    "description": "Chess game that includes a chess engine. The engine bot has an ELO around 2200",
+    "technologies": "JS, HTML, CSS",
+    "achivements": "First real mid-sized project in JS. Now I understand why people love TypeScript",
     "href": "youtube.com"
   },
   {
-    "title": "NO SCREENSHOT",
+    "title": "No Screenshot",
     "date": "12/25 - 12/25",
-    "description": "A WORD THAT YOU CAN READ BUT ITS IMPOSSIBLE TO SCREENSHOT",
-    "technologies": "JS&nbsp; HTML&nbsp; CSS",
-    "achivements": "JUST A COOL PROJECT &nbsp;NOT VERY COMPLEX STUFF",
+    "description": "A word that you can read but it's impossible to screenshot",
+    "technologies": "JS, HTML, CSS",
+    "achivements": "Just a cool project, not very complex stuff",
     "href": "youtube.com"
   }
 ]
