@@ -63,9 +63,11 @@ project-project > h1 {
   color: white;
   min-width: 120px;
   flex-shrink: 0;
+  font-weight: bold;
 }
 
 .project-value {
   color: var(--darkgray);
   opacity: 80%;
+  font-weight: bold;
 }
