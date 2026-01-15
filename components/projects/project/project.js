@@ -23,7 +23,7 @@ export default class ProjectProjects extends HTMLElement {
     <h3 class="project-date">${this.getDate()}</h3>
     <div class="project-details">
       <div class="project-row">
-        <span class="project-label">Description:</span>
+        <span class="project-label">Description:&nbsp;&nbsp;</span>
         <span class="project-value">${this.getDescription()}</span>
       </div>
       <div class="project-row">
@@ -31,7 +31,7 @@ export default class ProjectProjects extends HTMLElement {
         <span class="project-value">${this.getAchivements()}</span>
       </div>
       <div class="project-row">
-        <span class="project-label">Tech Stack:</span>
+        <span class="project-label">Tech Stack:&nbsp;&nbsp;&nbsp;</span>
         <span class="project-value">${this.getTechnologies()}</span>
       </div>
     </div>
