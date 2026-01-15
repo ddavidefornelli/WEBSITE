@@ -27,7 +27,7 @@ export default class ProjectProjects extends HTMLElement {
         <span class="project-value">${this.getDescription()}</span>
       </div>
       <div class="project-row">
-        <span class="project-label">Achievements:</span>
+        <span class="project-label">Achievements:&nbsp;</span>
         <span class="project-value">${this.getAchivements()}</span>
       </div>
       <div class="project-row">
