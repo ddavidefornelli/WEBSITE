@@ -30,3 +30,8 @@ custom-body > .title {
   position: relative;
   z-index: 1;
 }
+
+.projects-title {
+  margin-top: var(--big-margin);
+  color: white;
+}
