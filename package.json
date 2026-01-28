@@ -5,7 +5,8 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.32.0",
-    "vite": "npm:rolldown-vite@7.2.5"
+    "vite": "npm:rolldown-vite@7.2.5",
+    "@types/bun": "latest"
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
@@ -19,5 +20,9 @@
   "type": "module",
   "dependencies": {
     "@vercel/analytics": "^1.6.1"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
