@@ -5,15 +5,15 @@
     "description": "A simple sudoku game in the terminal",
     "technologies": "C",
     "achivements": "Learned a lot about memory management and the backtracking algorithm",
-    "href": "youtube.com"
+    "href": "https://github.com/ddavidefornelli/sudoku"
   },
   {
-    "title": "Chess Engine",
+    "title": "boid flock",
     "date": "12/25 - 12/25",
-    "description": "Chess game that includes a chess engine. The engine bot has an ELO around 2200",
+    "description": "boids algorithm, with an interactive UI that enables the user to select the desired parameters",
     "technologies": "JS, HTML, CSS",
-    "achivements": "First real mid-sized project in JS. Now I understand why people love TypeScript",
-    "href": "youtube.com"
+    "achivements": "taught me how to create and use custom events",
+    "href": "https://github.com/ddavidefornelli/bird-flock"
   },
   {
     "title": "No Screenshot",
@@ -21,6 +21,6 @@
     "description": "A word that you can read but it's impossible to screenshot",
     "technologies": "JS, HTML, CSS",
     "achivements": "Just a cool project, not very complex stuff",
-    "href": "youtube.com"
+    "href": ""
   }
 ]
