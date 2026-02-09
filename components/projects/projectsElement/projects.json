@@ -8,9 +8,9 @@
     "href": "https://github.com/ddavidefornelli/sudoku"
   },
   {
-    "title": "boid flock",
+    "title": "Boid Flock",
     "date": "12/25 - 12/25",
-    "description": "boids algorithm, with an interactive UI that enables the user to select the desired parameters",
+    "description": "Boids algorithm, with an interactive UI that enables the user to select the desired parameters",
     "technologies": "JS, HTML, CSS",
     "achivements": "taught me how to create and use custom events",
     "href": "https://github.com/ddavidefornelli/bird-flock"
