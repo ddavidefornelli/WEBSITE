@@ -1,5 +1,5 @@
-import './title.css';
-import html from './title.html?raw';
+import "./title.css";
+import html from "./title.html?raw";
 
 export default class CustomTitle extends HTMLElement {
   connectedCallback() {
@@ -8,8 +8,8 @@ export default class CustomTitle extends HTMLElement {
   }
 
   animateName() {
-    const typewriter = this.querySelector('.typewriter');
-    const cursor = this.querySelector('.cursor');
+    const typewriter = this.querySelector(".typewriter");
+    const cursor = this.querySelector(".cursor");
     const text = typewriter.dataset.text;
     let index = 0;
 
@@ -17,9 +17,9 @@ export default class CustomTitle extends HTMLElement {
       if (index < text.length) {
         typewriter.textContent += text.charAt(index);
         index++;
-        setTimeout(type, 80);
+        setTimeout(type, 45);
       } else {
-        cursor.classList.add('blink');
+        cursor.classList.add("blink");
       }
     };
 
@@ -27,4 +27,4 @@ export default class CustomTitle extends HTMLElement {
   }
 }
 
-customElements.define('custom-title', CustomTitle);
+customElements.define("custom-title", CustomTitle);

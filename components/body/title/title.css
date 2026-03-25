@@ -1,7 +1,6 @@
 .title-wrapper {
   margin: var(--medium-margin) 0 var(--small-margin) 0;
 }
-
 .title-github-link {
   transition: ease 200ms;
 }
@@ -10,9 +9,9 @@
   color: var(--primary);
   text-decoration: none;
   transition: ease 200ms;
-} 
+}
 
-.title-wrapper > h2 {
+.title-wrapper {
   color: var(--darkgray);
 }
 
@@ -30,15 +29,11 @@ p {
 .cursor {
   font-weight: 400;
   background: none;
-  -webkit-text-fill-color: var(--primary);
+  -webkit-text-fill-color: var(--white);
   opacity: 1;
 }
 
-.cursor.blink {
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+.orange {
+  text-decoration: underline !important;
+  color: var(--primary) !important;
 }

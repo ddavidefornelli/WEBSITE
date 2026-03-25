@@ -3,40 +3,38 @@ project-project > h1 {
 }
 
 .project-project-wrapper {
-  transition: ease 200ms;
+  border: 2px var(--lightgray) solid;
+  transition:
+    border-color ease 400ms,
+    padding ease 400ms;
+  padding: 16px;
 }
 
-.title > a {
-  transition: ease 200ms;
-  color: var(--lightgray);
+.project-project-wrapper:hover {
+  border-color: var(--primary);
+  padding: 16px;
 }
 
-.title > a:hover {
-  transition: ease 200ms;
-  color: var(--primary);
+.project-project-wrapper > #project-github-link,
+.project-project-wrapper > #project-github-link h3:not(.project-date) {
+  transition: color ease 400ms;
+}
+
+.project-project-wrapper:hover > #project-github-link,
+.project-project-wrapper:hover > #project-github-link h3:not(.project-date) {
+  color: var(--primary) !important;
 }
 
 .technologies {
-  margin: var(--small-margin) 0 var(--small-margin) 0
+  margin: var(--small-margin) 0 var(--small-margin) 0;
 }
 
 .title ~ p {
   margin-top: 2px;
 }
 
-.title-date {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title-date ~ a {
-  translate: 0 -6px;
-}
-
 .title-date > h3 {
   margin-left: var(--medium-margin);
-  translate: 0 -6px;
 }
 
 .project-date {

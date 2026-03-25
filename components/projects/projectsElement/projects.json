@@ -1,26 +1,26 @@
 [
   {
-    "title": "Sudoku",
+    "title": "SUDOKU",
     "date": "08/25 - 08/25",
-    "description": "A simple sudoku game in the terminal",
+    "description": "Terminal Sudoku game in C",
     "technologies": "C",
-    "achivements": "Learned a lot about memory management and the backtracking algorithm",
+    "achivements": "Learned memory management and backtracking",
     "href": "https://github.com/ddavidefornelli/sudoku"
   },
   {
-    "title": "Boid Flock",
+    "title": "BOID FLOCK",
     "date": "12/25 - 12/25",
-    "description": "Boids algorithm, with an interactive UI that enables the user to select the desired parameters",
+    "description": "Boids algorithm with interactive controls",
     "technologies": "JS, HTML, CSS",
-    "achivements": "taught me how to create and use custom events",
+    "achivements": "Learned how to create custom events",
     "href": "https://github.com/ddavidefornelli/bird-flock"
   },
   {
-    "title": "No Screenshot",
+    "title": "NO SCREENSHOT",
     "date": "12/25 - 12/25",
-    "description": "A word that you can read but it's impossible to screenshot",
+    "description": "A word you can read but can't screenshot",
     "technologies": "JS, HTML, CSS",
-    "achivements": "Just a cool project, not very complex stuff",
+    "achivements": "Fun side project",
     "href": ""
   }
 ]

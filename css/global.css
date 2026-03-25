@@ -1,32 +1,32 @@
 @font-face {
-  font-family: 'jetbrains-regular';
-  src: url('/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-family: "jetbrains-regular";
+  src: url("/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'jetbrains-medium';
-  src: url('/fonts/webfonts/JetBrainsMono-Medium.woff2') format('woff2');
+  font-family: "jetbrains-medium";
+  src: url("/fonts/webfonts/JetBrainsMono-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'jetbrains-bold';
-  src: url('/fonts/webfonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-family: "jetbrains-bold";
+  src: url("/fonts/webfonts/JetBrainsMono-Bold.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --darkgray: #A4A6A8;
-  --lightgray: #4B4B4B;
-  --white: #FFFFFF;
-  --primary: #FF5500;
+  --darkgray: #a4a6a8;
+  --lightgray: #4b4b4b;
+  --white: #ffffff;
+  --primary: #ff5500;
   --black: #1a1a1a;
 
   --small-margin: 8px;
@@ -34,12 +34,12 @@
   --medium-big-margin: 24px;
   --big-margin: 32px;
 
-  font-family: 'jetbrains-regular';
+  font-family: "jetbrains-regular";
   font-weight: 300;
 }
 
 h1 {
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -50,15 +50,18 @@ h3 {
   font-size: 1rem;
 }
 
-
 @media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
 
-  h1 { font-size: 1.8rem; }
+  h2 {
+    font-size: 1.3rem;
+  }
 
-  h2 { font-size: 1.3rem; }
-
-  h3 { font-size: 1rem; }
-
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 body {
@@ -68,13 +71,12 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--black);
-
 }
 
 .wrapper {
   max-width: 40rem;
   width: 100%;
-  
+
   padding: 0 16px 16px 16px;
 }
 
@@ -85,4 +87,8 @@ custom-header {
   z-index: 100;
   top: 0;
   margin-top: var(--medium-margin);
+}
+
+.orange {
+  color: var(--primary);
 }

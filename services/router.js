@@ -1,6 +1,6 @@
 const Home = () => '<custom-body></custom-body>';
 const Projects = () => '<projects-projects></projects-projects>';
-const NotFound = () => '<h1>404</h1><p>Pagina non trovata.</p><a href="/" data-link>Torna alla Home</a>';
+const NotFound = () => '<h1>404</h1><p>PAGINA NON TROVATA.</p><a href="/" data-link>TORNA ALLA HOME</a>';
 
 const router = async () => {
   const routes = [
