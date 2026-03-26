@@ -1,29 +1,12 @@
 .project-project-wrapper {
-  border: 2px var(--lightgray) solid;
-  transition:
-    border-color ease 400ms,
-    padding ease 400ms;
-  padding: 16px;
+  border: none;
+  transform: translateX(0);
+  transition: color var(--transition-slow), transform var(--transition-drift);
   position: relative;
 }
 
-.project-project-wrapper > .arrow {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  transition: transform ease 400ms;
-  color: var(--lightgray);
-}
-
-.project-project-wrapper:hover > .arrow {
-  transform: rotate(-45deg);
-  color: var(--primary) !important;
-}
-
 .project-project-wrapper:hover {
-  border-color: var(--primary);
-  padding: 16px;
-  transition: 400ms;
+  transform: translateX(10px);
 }
 
 .project-project-wrapper:hover > #project-github-link,
@@ -32,7 +15,7 @@
   > #project-github-link
   h3:not(.project-date):not(.arrow) {
   color: var(--primary) !important;
-  transition: ease 400ms;
+  transition: color var(--transition-slow);
 }
 
 .technologies {
@@ -46,6 +29,7 @@
 .project-date {
   margin-bottom: 4px;
   color: var(--lightgray);
+  opacity: 75%;
 }
 
 .project-description {
@@ -61,10 +45,24 @@
 
 .project-row {
   display: flex;
+  transform: translateX(0);
+  transition: transform var(--transition-slow), opacity var(--transition-slow);
+}
+
+.project-project-wrapper:hover .project-row {
+  transform: translateX(6px);
+}
+
+.project-project-wrapper:hover .project-row:nth-child(2) {
+  transition-delay: 40ms;
+}
+
+.project-project-wrapper:hover .project-row:nth-child(3) {
+  transition-delay: 80ms;
 }
 
 .project-label {
-  color: white;
+  color: var(--darkgray);
   min-width: 120px;
   flex-shrink: 0;
   font-weight: bold;
@@ -72,6 +70,6 @@
 
 .project-value {
   color: var(--darkgray);
-  opacity: 80%;
+  opacity: 90%;
   font-weight: bold;
 }

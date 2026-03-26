@@ -2,34 +2,33 @@
   margin: var(--medium-margin) 0 var(--small-margin) 0;
 }
 .title-github-link {
-  transition: ease 200ms;
+  transition: color var(--transition-medium);
 }
 
 .title-github-link:hover {
   color: var(--primary);
   text-decoration: none;
-  transition: ease 200ms;
 }
 
 .title-wrapper {
   color: var(--darkgray);
 }
 
-p {
+.title-wrapper p {
   margin-top: var(--small-margin);
-  color: var(--darkgray);
+  color: var(--lightgray);
   font-weight: bold;
 }
 
 .silver {
   font-weight: 900;
-  color: white;
+  color: var(--darkgray);
 }
 
 .cursor {
   font-weight: 400;
   background: none;
-  -webkit-text-fill-color: var(--white);
+  -webkit-text-fill-color: var(--primary);
   opacity: 1;
 }
 

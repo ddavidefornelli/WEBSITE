@@ -23,7 +23,6 @@ export default class ProjectProjects extends HTMLElement {
   render() {
     this.innerHTML = `
   <div class="project-project-wrapper">
-    <h2 class="arrow"> &gt; </h2>
 <a id="project-github-link" href="${this.getHref()}">
     <div class="title">
       <h1 class="silver">${this.getTitle()}</h1>

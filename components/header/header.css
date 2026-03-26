@@ -20,17 +20,19 @@
 }
 
 #links-ul > .external-links > * {
-  transition: 200ms ease;
+  transform: translateY(0);
+  transition: color var(--transition-medium), transform var(--transition-drift);
   margin-left: var(--big-margin);
 }
 
 #links-ul > .internal-links > * {
   margin-right: var(--big-margin);
-  transition: 200ms ease;
+  transform: translateY(0);
+  transition: color var(--transition-medium), transform var(--transition-drift);
 }
 
 #links-ul > .internal-links > h4 {
-  transition: ease 200ms;
+  transition: color var(--transition-medium), transform var(--transition-drift);
 }
 
 a:link, a:visited    {
@@ -40,17 +42,18 @@ a:link, a:visited    {
 
 a {
   color: var(--lightgray);
-  transition: 300ms ease;
+  transition: color var(--transition-medium);
 }
 
 a:hover {
   color: var(--primary);
-  transition: 300ms ease;
 }
 
+#links-ul > .external-links > *:hover,
 #links-ul > .internal-links > *:hover {
   text-decoration: none;
-  transition: ease 200ms; } 
+  transform: translateY(-2px);
+}
 
 @media (max-width: 576px) {
   .backdrop {
@@ -62,8 +65,8 @@ a:hover {
     height: 100%;
     background: linear-gradient(
     to bottom,
-    var(--black)
-    hsl(0deg 0% 0%) 0%,
+    var(--black),
+    hsl(0deg 0% 100%) 0%,
     transparent 50%
     );
     backdrop-filter: blur(32px);
@@ -84,8 +87,8 @@ a:hover {
   height: 100%;
   background: linear-gradient(
   to bottom,
-  var(--black)
-  hsl(0deg 0% 0%) 0%,
+  var(--black),
+  hsl(0deg 0% 100%) 0%,
   transparent 50%
   );
   backdrop-filter: blur(16px);
@@ -94,4 +97,3 @@ a:hover {
   );
   pointer-events: none;
 }
-

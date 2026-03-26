@@ -23,11 +23,17 @@
 }
 
 :root {
-  --darkgray: #a4a6a8;
-  --lightgray: #4b4b4b;
-  --white: #ffffff;
-  --primary: #ff5500;
-  --black: #1a1a1a;
+  --darkgray: #444444;
+  --lightgray: #6a6a6a;
+  --white: #dddddd;
+  --primary: #c62828;
+  --black: #ffffff;
+  --ease-smooth: cubic-bezier(0.18, 0.9, 0.32, 1);
+  --ease-drift: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 240ms var(--ease-smooth);
+  --transition-medium: 380ms var(--ease-smooth);
+  --transition-slow: 520ms var(--ease-smooth);
+  --transition-drift: 720ms var(--ease-drift);
 
   --small-margin: 8px;
   --medium-margin: 16px;
@@ -66,6 +72,9 @@ h3 {
 
 body {
   display: flex;
+  font-family: "jetbrains-medium";
+  font-weight: 400;
+  text-transform: uppercase;
 
   flex-direction: column;
   align-items: center;

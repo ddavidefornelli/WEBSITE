@@ -20,12 +20,11 @@ custom-body > .title {
 
 #all-projects-link:hover {
   color: var(--primary);
-  transition: ease 400ms;
 }
 
 #all-projects-link {
-  transition: ease 400ms;
-  color: black;
+  transition: color var(--transition-medium);
+  color: var(--primary);
   
   position: relative;
   z-index: 1;
@@ -33,5 +32,19 @@ custom-body > .title {
 
 .projects-title {
   margin-top: var(--big-margin);
-  color: white;
+  color: var(--darkgray);
+}
+
+custom-body > p.description {
+  font-family: "jetbrains-bold";
+  font-weight: 500;
+  color: var(--darkgray);
+}
+
+.description .silver {
+  color: var(--darkgray);
+}
+
+custom-body > homepage-project {
+  display: block;
 }

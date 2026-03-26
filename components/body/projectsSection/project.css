@@ -1,11 +1,11 @@
 .project-wrapper {
   margin: var(--small-margin) 0 var(--small-margin) 0;
-  transition: ease 400ms;
+  transform: translateX(0);
+  transition: transform var(--transition-drift), opacity var(--transition-slow);
 }
 
 .project-wrapper:hover {
-  translate: 20px;
-  transition: ease 400ms;
+  transform: translateX(10px);
 }
 
 .title {
@@ -14,19 +14,27 @@
 
 .date {
   color: var(--lightgray);
+  opacity: 75%;
 }
 
 .description {
   color: var(--darkgray);
-  opacity: 60%;
+  opacity: 85%;
 }
 
 .title, .date, .description {
-  transition: ease 800ms;
+  transition: color var(--transition-slow), opacity var(--transition-slow);
+}
+
+.project-wrapper:hover .title {
+  color: var(--primary);
+}
+
+.project-wrapper:hover .description {
+  opacity: 1;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
 }
-

@@ -16,12 +16,10 @@
   color: var(--darkgray);
   text-decoration: none;
 
-  transition: ease 200ms;
+  transition: color var(--transition-medium);
 }
 
 .wrapper-footer > *:hover {
   color: var(--primary);
   text-decoration: none;
-
-  transition: ease 200ms;
-} 
+}
