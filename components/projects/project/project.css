@@ -1,28 +1,38 @@
-project-project > h1 {
-  background-color: blue;
-}
-
 .project-project-wrapper {
   border: 2px var(--lightgray) solid;
   transition:
     border-color ease 400ms,
     padding ease 400ms;
   padding: 16px;
+  position: relative;
+}
+
+.project-project-wrapper > .arrow {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  transition: transform ease 400ms;
+  color: var(--lightgray);
+}
+
+.project-project-wrapper:hover > .arrow {
+  transform: rotate(-45deg);
+  color: var(--primary) !important;
 }
 
 .project-project-wrapper:hover {
   border-color: var(--primary);
   padding: 16px;
-}
-
-.project-project-wrapper > #project-github-link,
-.project-project-wrapper > #project-github-link h3:not(.project-date) {
-  transition: color ease 400ms;
+  transition: 400ms;
 }
 
 .project-project-wrapper:hover > #project-github-link,
-.project-project-wrapper:hover > #project-github-link h3:not(.project-date) {
+.project-project-wrapper:hover > #project-github-link h1,
+.project-project-wrapper:hover
+  > #project-github-link
+  h3:not(.project-date):not(.arrow) {
   color: var(--primary) !important;
+  transition: ease 400ms;
 }
 
 .technologies {
@@ -31,10 +41,6 @@ project-project > h1 {
 
 .title ~ p {
   margin-top: 2px;
-}
-
-.title-date > h3 {
-  margin-left: var(--medium-margin);
 }
 
 .project-date {
