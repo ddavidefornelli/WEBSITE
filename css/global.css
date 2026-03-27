@@ -23,11 +23,11 @@
 }
 
 :root {
-  --color-paper: #829CBC;
-  --color-paper-soft: #829CBC;
-  --color-cream: #829CBC;
-  --color-surface: #829CBC;
-  --color-surface-muted: #829CBC;
+  --color-paper: #fff799;
+  --color-paper-soft: #fff799;
+  --color-cream: #fff799;
+  --color-surface: #fff799;
+  --color-surface-muted: #fff799;
   --color-ink: #121212;
   --color-ink-soft: rgba(18, 18, 18, 0.78);
   --color-ink-faint: rgba(18, 18, 18, 0.58);
