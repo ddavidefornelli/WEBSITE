@@ -45,7 +45,7 @@
 
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .site-header {
-    padding: 0.4rem 0.45rem;
+    padding: 0.9rem 0.45rem;
   }
 
   .site-nav {

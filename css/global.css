@@ -249,6 +249,6 @@ custom-footer {
   }
 
   .panel {
-    padding: 0.6rem;
+    padding-inline: 0.6rem;
   }
 }

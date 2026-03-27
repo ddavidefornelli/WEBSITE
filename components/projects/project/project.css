@@ -66,12 +66,7 @@
 
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .project-card__link {
-    padding: 0.65rem;
-  }
-
-  .project-card__rows {
-    gap: 0.55rem;
-    padding-top: 0.65rem;
+    padding-inline: 0.65rem;
   }
 
   .project-card__rows span {

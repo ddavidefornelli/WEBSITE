@@ -55,6 +55,6 @@ homepage-project {
 
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .home-project-card__link {
-    padding: 0.65rem;
+    padding-inline: 0.65rem;
   }
 }

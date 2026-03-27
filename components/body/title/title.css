@@ -71,7 +71,7 @@ custom-title {
 
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .hero-poster {
-    padding: 0.65rem;
+    padding: 1.5rem 0.65rem;
     min-height: 0;
   }
 
@@ -80,8 +80,7 @@ custom-title {
   }
 
   .hero-poster__copy {
-    gap: 0.7rem;
-    padding: 0.9rem 0 1rem;
+    padding: 3rem 0 3.4rem;
   }
 
   .hero-poster__name-line {
