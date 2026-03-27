@@ -28,18 +28,20 @@
 
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .site-footer__row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    padding-top: 0.85rem;
   }
 
   .site-footer__row a {
-    font-size: clamp(0.95rem, 0.8rem + 1vw, 1.15rem);
-    letter-spacing: 0.08em;
+    font-size: clamp(0.62rem, 2.2vw, 0.82rem);
+    letter-spacing: 0.03em;
+    white-space: nowrap;
   }
 
   .site-footer__email {
-    max-width: 100%;
-    overflow-wrap: anywhere;
+    max-width: none;
+    overflow-wrap: normal;
   }
 }

@@ -82,3 +82,9 @@
     width: 1.8rem;
   }
 }
+
+@media (max-width: 640px) and (max-aspect-ratio: 3/4) {
+  .home-page {
+    padding: 0.85rem 0;
+  }
+}
