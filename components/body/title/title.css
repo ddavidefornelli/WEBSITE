@@ -81,6 +81,7 @@ custom-title {
 
   .hero-poster__copy {
     padding: 3rem 0 3.4rem;
+    padding-bottom: 0;
   }
 
   .hero-poster__name-line {

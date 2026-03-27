@@ -81,4 +81,8 @@
   .home-page__star {
     width: 1.8rem;
   }
+
+  .home-section {
+    gap: var(--space-md);
+  }
 }

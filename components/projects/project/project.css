@@ -2,8 +2,6 @@
   display: grid;
   gap: 1rem;
   padding: clamp(1.1rem, 3vw, 1.5rem);
-  border: 2px solid var(--color-outline);
-  border-radius: var(--radius-lg);
   background: var(--color-paper-soft);
   box-shadow: var(--shadow-soft);
   font-weight: 700;
@@ -47,7 +45,6 @@
   display: grid;
   gap: 0.8rem;
   padding-top: 0.9rem;
-  border-top: 2px solid rgba(18, 18, 18, 0.1);
 }
 
 .project-card__rows p {
@@ -67,6 +64,7 @@
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .project-card__link {
     padding-inline: 0.65rem;
+    border-top: 2px solid rgba(18, 18, 18, 0.1);
   }
 
   .project-card__rows span {

@@ -235,7 +235,7 @@ custom-footer {
   }
 
   .site-star {
-    width: 1.8rem;
+    width: 2.5rem;
   }
 }
 
@@ -249,7 +249,4 @@ custom-footer {
     padding: 0 0.2rem 0;
   }
 
-  .panel {
-    padding-inline: 0.6rem;
-  }
 }
