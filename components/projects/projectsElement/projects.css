@@ -1,6 +1,8 @@
 .projects-page {
   display: grid;
   gap: var(--space-lg);
+  width: 100%;
+  padding-top: clamp(1rem, 2.2vw, 1.75rem);
 }
 
 .projects-page__list {
@@ -8,6 +10,22 @@
   gap: 1rem;
 }
 
+.projects-page .section-heading h1 {
+  font-size: clamp(4.6rem, 10vw, 10.5rem);
+  line-height: 0.88;
+}
+
 project-project {
   display: block;
+}
+
+@media (min-width: 960px) {
+  .projects-page .section-heading h1 {
+    font-size: clamp(6rem, 9vw, 12rem);
+  }
+
+  .projects-page__list {
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    align-items: start;
+  }
 }

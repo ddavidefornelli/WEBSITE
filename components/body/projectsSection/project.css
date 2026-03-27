@@ -8,7 +8,7 @@ homepage-project {
   padding: clamp(1.1rem, 3vw, 1.4rem);
   border: 2px solid var(--color-outline);
   border-radius: var(--radius-lg);
-  background: rgba(255, 248, 229, 0.56);
+  background: var(--color-paper-soft);
   box-shadow: var(--shadow-soft);
   transition:
     transform var(--transition-medium),
@@ -29,11 +29,8 @@ homepage-project {
 }
 
 .home-project-card__top {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  display: grid;
+  gap: 0.35rem;
 }
 
 .home-project-card__top h3 {
