@@ -157,7 +157,8 @@ custom-footer {
 }
 
 .panel {
-  padding: clamp(1.1rem, 3vw, 1.5rem);
+  padding-top: clamp(1.1rem, 3vw, 1.5rem);
+  padding-bottom: clamp(1.1rem, 3vw, 1.5rem);
   border-radius: var(--radius-lg);
   background: var(--color-surface);
   box-shadow: var(--shadow-soft);
