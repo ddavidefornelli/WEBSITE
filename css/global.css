@@ -205,7 +205,6 @@ custom-footer {
 
 .site-star {
   width: 5rem;
-
   aspect-ratio: 1;
   background: var(--color-ink);
   clip-path: polygon(
