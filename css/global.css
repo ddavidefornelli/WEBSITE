@@ -245,6 +245,10 @@ custom-footer {
     --page-max: calc(100vw - 0.4rem);
   }
 
+  .wrapper {
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  }
+
   body {
     padding: 0 0.2rem 0;
   }
