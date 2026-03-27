@@ -1,75 +1,82 @@
-import "./project.css";
+import './project.css';
 
 export default class ProjectProjects extends HTMLElement {
-  async connectedCallback() {
-    this.render();
-  }
-
   static get observedAttributes() {
     return [
-      "title",
-      "date",
-      "description",
-      "href",
-      "videoPath",
-      "technologies",
+      'title',
+      'date',
+      'description',
+      'href',
+      'technologies',
+      'achievements',
     ];
   }
 
-  async attributeChangeCallback(oldValue, newValue) {
-    if (oldValue !== newValue) this.render();
+  connectedCallback() {
+    this.render();
+  }
+
+  attributeChangedCallback() {
+    this.render();
   }
 
   render() {
+    const href = this.getHref();
+    const shellTag = href ? 'a' : 'div';
+    const shellAttributes = href
+      ? `class="project-card__link" href="${href}" target="_blank" rel="noopener noreferrer"`
+      : 'class="project-card__link project-card__link--static"';
+
     this.innerHTML = `
-  <div class="project-project-wrapper">
-<a id="project-github-link" href="${this.getHref()}">
-    <div class="title">
-      <h1 class="silver">${this.getTitle()}</h1>
-    </div>
-    <h3 class="project-date">${this.getDate()}</h3>
-    <div class="project-details">
-      <div class="project-row">
-        <span class="project-label">DESCRIPTION:&nbsp;&nbsp;</span>
-        <span class="project-value">${this.getDescription()}</span>
-      </div>
-      <div class="project-row">
-        <span class="project-label">ACHIEVEMENTS:&nbsp;</span>
-        <span class="project-value">${this.getAchivements()}</span>
-      </div>
-      <div class="project-row">
-        <span class="project-label">TECH STACK:&nbsp;&nbsp;&nbsp;</span>
-        <span class="project-value">${this.getTechnologies()}</span>
-      </div>
-    </div>
-</a>
-  </div>
-`;
+      <article class="project-card">
+        <${shellTag} ${shellAttributes}>
+          <div class="project-card__top">
+            <h2>${this.getTitle()}</h2>
+            <p class="project-card__date">${this.getDate()}</p>
+          </div>
+
+          <div class="project-card__rows">
+            <p>
+              <span>DESCRIPTION:</span>
+              ${this.getDescription()}
+            </p>
+            <p>
+              <span>ACHIEVEMENTS:</span>
+              ${this.getAchievements()}
+            </p>
+            <p>
+              <span>TECH STACK:</span>
+              ${this.getTechnologies()}
+            </p>
+          </div>
+        </${shellTag}>
+      </article>
+    `;
   }
 
   getTitle() {
-    return this.getAttribute("title");
+    return this.getAttribute('title');
   }
 
   getDate() {
-    return this.getAttribute("date");
+    return this.getAttribute('date');
   }
 
   getDescription() {
-    return this.getAttribute("description");
+    return this.getAttribute('description');
   }
 
   getHref() {
-    return this.getAttribute("href");
+    return this.getAttribute('href');
   }
 
-  getAchivements() {
-    return this.getAttribute("achivements");
+  getAchievements() {
+    return this.getAttribute('achievements');
   }
 
   getTechnologies() {
-    return this.getAttribute("technologies");
+    return this.getAttribute('technologies');
   }
 }
 
-customElements.define("project-project", ProjectProjects);
+customElements.define('project-project', ProjectProjects);

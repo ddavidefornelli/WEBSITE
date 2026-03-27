@@ -1,31 +1,37 @@
 import './project.css';
 
 export default class Project extends HTMLElement {
-  async connectedCallback() {
+  static get observedAttributes() {
+    return ['title', 'date', 'description', 'href'];
+  }
+
+  connectedCallback() {
     this.render();
   }
 
-  static get observedAttributes() {
-    return ['title, date, description', 'href'];
-  }
-
-  async attributeChangeCallback(oldValue, newValue) {
-    if (oldValue !== newValue) this.render();
+  attributeChangedCallback() {
+    this.render();
   }
 
   render() {
-    this.innerHTML = `
+    const href = this.getHref();
+    const shellTag = href ? 'a' : 'div';
+    const shellAttributes = href
+      ? `class="home-project-card__link" href="${href}" target="_blank" rel="noopener noreferrer"`
+      : 'class="home-project-card__link home-project-card__link--static"';
 
-<div class="project-wrapper">
-  <a href='${this.getHref()}'>
-    <div class='top'>
-    <h2 class='title'>${this.getTitle()}</h2>
-    </div>
-    <h5 class='date'>${this.getDate()}</h5>
-      <h3 class='description'>${this.getDescription()}</h3>
-  </a>
-</div>
-`;
+    this.innerHTML = `
+      <article class="home-project-card">
+        <${shellTag} ${shellAttributes}>
+          <div class="home-project-card__top">
+            <h3>${this.getTitle()}</h3>
+            <p class="home-project-card__date">${this.getDate()}</p>
+          </div>
+
+          <p class="home-project-card__description">${this.getDescription()}</p>
+        </${shellTag}>
+      </article>
+    `;
   }
 
   getTitle() { return this.getAttribute('title'); }

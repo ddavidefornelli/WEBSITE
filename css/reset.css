@@ -20,10 +20,9 @@
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
-  cursor: url('/public/dot-svgrepo-com.svg');
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  
+
   text-rendering: optimizeLegibility;
 }
 

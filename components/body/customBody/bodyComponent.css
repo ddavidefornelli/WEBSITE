@@ -1,50 +1,31 @@
-custom-body > .title {
-  margin-top: var(--big-margin);
+.home-page {
+  display: grid;
+  gap: var(--space-3xl);
 }
 
-custom-body > .title {
-  align-items: end;
+.home-section {
+  display: grid;
+  gap: var(--space-lg);
 }
 
-.title {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
+.home-project-list {
+  display: grid;
+  gap: 1rem;
 }
 
-.title > h3 > a {
-  translate: 0 -3px;
-  position: relative;
-  z-index: 1;
+.home-skills {
+  display: grid;
+  gap: 0.85rem;
 }
 
-#all-projects-link:hover {
-  color: var(--primary);
+.home-skills p {
+  color: var(--color-ink);
 }
 
-#all-projects-link {
-  transition: color var(--transition-medium);
-  color: var(--primary);
-  
-  position: relative;
-  z-index: 1;
-}
-
-.projects-title {
-  margin-top: var(--big-margin);
-  color: var(--darkgray);
-}
-
-custom-body > p.description {
-  font-family: "jetbrains-bold";
-  font-weight: 500;
-  color: var(--darkgray);
-}
-
-.description .silver {
-  color: var(--darkgray);
-}
-
-custom-body > homepage-project {
-  display: block;
+.home-skills span {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
 }
