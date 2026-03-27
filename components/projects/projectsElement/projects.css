@@ -30,7 +30,7 @@ project-project {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .projects-page .section-heading {
     gap: 0.6rem;
   }
