@@ -29,4 +29,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .site-footer__email {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
 }

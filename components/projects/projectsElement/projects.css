@@ -29,3 +29,13 @@ project-project {
     align-items: start;
   }
 }
+
+@media (max-width: 640px) {
+  .projects-page .section-heading {
+    gap: 0.6rem;
+  }
+
+  .projects-page .section-heading h1 {
+    font-size: clamp(3.4rem, 17vw, 4.6rem);
+  }
+}

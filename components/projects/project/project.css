@@ -59,3 +59,10 @@
   text-transform: uppercase;
   color: var(--color-ink-faint);
 }
+
+@media (max-width: 560px) {
+  .project-card__rows span {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}

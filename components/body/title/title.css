@@ -101,6 +101,10 @@ custom-title {
     min-height: 0;
   }
 
+  .hero-poster__copy h1 {
+    font-size: clamp(3.4rem, 17vw, 4.6rem);
+  }
+
   .hero-poster__star--top-left {
     top: 0.85rem;
     left: 0.85rem;
@@ -123,5 +127,10 @@ custom-title {
 
   .hero-poster__copy {
     padding-top: 2.8rem;
+  }
+
+  .hero-poster__name-line {
+    min-width: 0;
+    white-space: normal;
   }
 }
