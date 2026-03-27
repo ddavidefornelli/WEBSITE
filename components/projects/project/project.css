@@ -6,6 +6,7 @@
   border-radius: var(--radius-lg);
   background: var(--color-paper-soft);
   box-shadow: var(--shadow-soft);
+  font-weight: 700;
   transition:
     transform var(--transition-medium),
     background-color var(--transition-medium);
@@ -30,12 +31,13 @@
 }
 
 .project-card__top h2 {
-  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-size: clamp(2.8rem, 5.4vw, 4.4rem);
 }
 
 .project-card__date {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: var(--text-label);
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-ink-faint);
@@ -50,11 +52,13 @@
 
 .project-card__rows p {
   color: var(--color-ink);
+  line-height: 1.3;
 }
 
 .project-card__rows span {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: var(--text-label);
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-ink-faint);

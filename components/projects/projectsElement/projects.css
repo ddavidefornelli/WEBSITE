@@ -11,8 +11,8 @@
 }
 
 .projects-page .section-heading h1 {
-  font-size: clamp(4.6rem, 10vw, 10.5rem);
-  line-height: 0.88;
+  font-size: clamp(5.2rem, 10vw, 11.5rem);
+  line-height: 0.9;
 }
 
 project-project {
@@ -21,7 +21,7 @@ project-project {
 
 @media (min-width: 960px) {
   .projects-page .section-heading h1 {
-    font-size: clamp(6rem, 9vw, 12rem);
+    font-size: clamp(6.4rem, 9vw, 13rem);
   }
 
   .projects-page__list {
@@ -36,6 +36,6 @@ project-project {
   }
 
   .projects-page .section-heading h1 {
-    font-size: clamp(3.4rem, 17vw, 4.6rem);
+    font-size: clamp(3.8rem, 17vw, 5.2rem);
   }
 }
