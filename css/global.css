@@ -246,6 +246,7 @@ custom-footer {
   }
 
   .wrapper {
+    gap: 0.8rem;
     padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
   }
 

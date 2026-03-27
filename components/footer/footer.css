@@ -29,14 +29,14 @@
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .site-footer__row {
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.7rem;
     flex-wrap: nowrap;
-    padding-top: 2.75rem;
+    padding-top: 1.5rem;
   }
 
   .site-footer__row a {
-    font-size: clamp(0.62rem, 2.2vw, 0.82rem);
-    letter-spacing: 0.03em;
+    font-size: clamp(0.98rem, 1.1vw + 0.78rem, 1.12rem);
+    letter-spacing: 0.01em;
     white-space: nowrap;
   }
 
