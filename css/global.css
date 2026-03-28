@@ -23,11 +23,11 @@
 }
 
 :root {
-  --color-paper: #fff799;
-  --color-paper-soft: #fff799;
-  --color-cream: #fff799;
-  --color-surface: #fff799;
-  --color-surface-muted: #fff799;
+  --color-paper: #d8edf3;
+  --color-paper-soft: #d8edf3;
+  --color-cream: #d8edf3;
+  --color-surface: #d8edf3;
+  --color-surface-muted: #d8edf3;
   --color-ink: #121212;
   --color-ink-soft: rgba(18, 18, 18, 0.78);
   --color-ink-faint: rgba(18, 18, 18, 0.58);
@@ -54,6 +54,7 @@
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +67,19 @@ body {
   text-transform: uppercase;
   color: var(--color-ink);
   background: var(--color-paper);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.12;
+  mix-blend-mode: multiply;
+  background-image: url("/noise.svg");
+  background-size: 180px 180px;
+  background-repeat: repeat;
 }
 
 ::selection {
