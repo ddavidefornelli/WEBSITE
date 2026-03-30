@@ -9,7 +9,6 @@ homepage-project {
   padding-bottom: clamp(1.1rem, 3vw, 1.4rem);
   border-radius: var(--radius-lg);
   background: var(--color-paper-soft);
-  box-shadow: var(--shadow-soft);
   font-weight: 700;
   text-transform: uppercase;
   transition:
@@ -45,7 +44,7 @@ homepage-project {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-faint);
+  color: var(--color-accent);
 }
 
 .home-project-card__description {

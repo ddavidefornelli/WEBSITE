@@ -38,7 +38,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-faint);
+  color: var(--color-accent);
 }
 
 .project-card__rows {
@@ -58,13 +58,12 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-faint);
+  color: var(--color-accent);
 }
 
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .project-card__link {
     padding-inline: 0.65rem;
-    border-top: 2px solid rgba(18, 18, 18, 0.1);
   }
 
   .project-card__rows span {

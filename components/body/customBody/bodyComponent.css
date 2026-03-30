@@ -27,6 +27,10 @@
   padding-inline: var(--content-gutter);
 }
 
+.home-section .section-heading h2 {
+  color: var(--color-accent);
+}
+
 .home-page__star--bottom-left {
   bottom: 0;
   left: 0;
@@ -62,7 +66,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-faint);
+  color: var(--color-accent);
 }
 
 @media (min-width: 960px) {

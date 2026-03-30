@@ -1,7 +1,6 @@
 .site-header {
   padding: 1rem 1.25rem;
   background: var(--color-surface);
-  box-shadow: var(--shadow-soft);
 }
 
 .site-nav {
@@ -38,6 +37,7 @@
 }
 
 .site-nav__link[aria-current="page"] {
+  color: var(--color-accent);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;

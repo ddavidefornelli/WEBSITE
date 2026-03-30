@@ -23,17 +23,18 @@
 }
 
 :root {
-  --color-paper: #d8edf3;
-  --color-paper-soft: #d8edf3;
-  --color-cream: #d8edf3;
-  --color-surface: #d8edf3;
-  --color-surface-muted: #d8edf3;
-  --color-ink: #121212;
-  --color-ink-soft: rgba(18, 18, 18, 0.78);
-  --color-ink-faint: rgba(18, 18, 18, 0.58);
-  --color-outline: rgba(18, 18, 18, 0.92);
-  --color-shadow: rgba(73, 58, 18, 0);
-  --shadow-soft: none;
+  --color-paper: #c6ab33;
+  --color-paper-soft: #c6ab33;
+  --color-cream: #c6ab33;
+  --color-surface: #c6ab33;
+  --color-surface-muted: #c6ab33;
+  --color-ink: #0b0b0b;
+  --color-ink-soft: rgba(11, 11, 11, 0.84);
+  --color-ink-faint: rgba(11, 11, 11, 0.68);
+  --color-outline: rgba(11, 11, 11, 0.88);
+  --color-shadow: rgba(11, 11, 11, 0);
+  --color-accent: #a93a2d;
+  --shadow-soft: inset 0 0 0 2px rgba(11, 11, 11, 0.88);
   --radius-lg: 1.75rem;
   --radius-pill: 999px;
   --space-sm: 0.75rem;
@@ -75,7 +76,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 999;
-  opacity: 0.12;
+  opacity: 0.18;
   mix-blend-mode: multiply;
   background-image: url("/noise.svg");
   background-size: 180px 180px;
@@ -120,6 +121,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
+  color: var(--color-ink);
   font-weight: 700;
   line-height: 0.92;
   text-transform: uppercase;
@@ -173,9 +175,7 @@ custom-footer {
 .panel {
   padding-top: clamp(1.1rem, 3vw, 1.5rem);
   padding-bottom: clamp(1.1rem, 3vw, 1.5rem);
-  border-radius: var(--radius-lg);
   background: var(--color-surface);
-  box-shadow: var(--shadow-soft);
 }
 
 .section-heading {
@@ -192,6 +192,7 @@ custom-footer {
 .site-link {
   display: inline-flex;
   align-items: center;
+  color: var(--color-accent);
   font-family: var(--font-mono);
   font-size: var(--text-label);
   font-weight: 700;
@@ -207,6 +208,7 @@ custom-footer {
 }
 
 .text-link {
+  color: var(--color-accent);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.18em;

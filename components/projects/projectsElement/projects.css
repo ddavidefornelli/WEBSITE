@@ -11,6 +11,7 @@
 }
 
 .projects-page .section-heading h1 {
+  color: var(--color-accent);
   font-size: clamp(5.2rem, 10vw, 11.5rem);
   line-height: 0.9;
 }
