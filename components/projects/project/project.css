@@ -24,8 +24,10 @@
 }
 
 .project-card__top {
-  display: grid;
-  gap: 0.35rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .project-card__top h2 {
@@ -38,13 +40,13 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-ink);
 }
 
 .project-card__rows {
   display: grid;
-  gap: 0.8rem;
-  padding-top: 0.9rem;
+  gap: inherit;
+  padding-top: inherit;
 }
 
 .project-card__rows p {
@@ -58,12 +60,17 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-ink);
 }
 
 @media (max-width: 640px) and (max-aspect-ratio: 3/4) {
   .project-card__link {
     padding-inline: 0.65rem;
+  }
+
+  .project-card__top {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .project-card__rows span {

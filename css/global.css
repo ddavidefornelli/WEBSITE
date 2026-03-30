@@ -156,7 +156,7 @@ h6 {
 }
 
 custom-header {
-  width: min(100%, var(--page-max));
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 30;

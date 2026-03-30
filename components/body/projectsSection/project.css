@@ -31,7 +31,7 @@ homepage-project {
 
 .home-project-card__top {
   display: grid;
-  gap: 0.35rem;
+  gap: inherit;
 }
 
 .home-project-card__top h3 {
@@ -44,7 +44,7 @@ homepage-project {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-ink);
 }
 
 .home-project-card__description {
