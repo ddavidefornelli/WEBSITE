@@ -23,18 +23,34 @@
 }
 
 :root {
-  --color-paper: #c6ab33;
-  --color-paper-soft: #c6ab33;
-  --color-cream: #c6ab33;
-  --color-surface: #c6ab33;
-  --color-surface-muted: #c6ab33;
-  --color-ink: #0b0b0b;
-  --color-ink-soft: rgba(11, 11, 11, 0.84);
-  --color-ink-faint: rgba(11, 11, 11, 0.68);
-  --color-outline: rgba(11, 11, 11, 0.88);
-  --color-shadow: rgba(11, 11, 11, 0);
-  --color-accent: #a93a2d;
-  --shadow-soft: inset 0 0 0 2px rgba(11, 11, 11, 0.88);
+  --color-paper: #040507;
+  --color-paper-soft: #0a0c10;
+  --color-cream: #0f1116;
+  --color-surface: #0c0f14;
+  --color-surface-muted: #12151c;
+  --color-ink: #f4f5f7;
+  --color-ink-soft: rgba(237, 239, 242, 0.85);
+  --color-ink-faint: rgba(237, 239, 242, 0.68);
+  --color-outline: rgba(255, 255, 255, 0.08);
+  --color-shadow: rgba(0, 0, 0, 0.48);
+  --color-accent: #d8dbe0;
+  --shadow-soft: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --silver-1: #f2f3f5;
+  --silver-2: #e4e6ea;
+  --silver-3: #c5c8ce;
+  --silver-4: #9b9ea6;
+  --silver-5: #2f3239;
+  --shine-x: 50%;
+  --shine-y: 42%;
+  --shine-glow: 0 0 8px rgba(255, 255, 255, 0.05);
+  --metal-gradient: radial-gradient(
+    circle at var(--shine-x) var(--shine-y),
+    var(--silver-1) 0%,
+    var(--silver-2) 22%,
+    var(--silver-3) 48%,
+    var(--silver-4) 70%,
+    var(--silver-5) 100%
+  );
   --radius-lg: 1.75rem;
   --radius-pill: 999px;
   --space-sm: 0.75rem;
@@ -67,7 +83,10 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-ink);
-  background: var(--color-paper);
+  background:
+    radial-gradient(120% 80% at 16% 18%, rgba(255, 255, 255, 0.04), transparent 52%),
+    radial-gradient(110% 90% at 80% 10%, rgba(255, 255, 255, 0.03), transparent 48%),
+    linear-gradient(145deg, #040507 0%, #0a0c10 44%, #0f1219 100%);
 }
 
 body::before {
@@ -76,16 +95,16 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 999;
-  opacity: 0.18;
-  mix-blend-mode: multiply;
+  opacity: 0.16;
+  mix-blend-mode: soft-light;
   background-image: url("/noise.svg");
   background-size: 180px 180px;
   background-repeat: repeat;
 }
 
 ::selection {
-  color: var(--color-cream);
-  background: var(--color-ink);
+  color: #050507;
+  background: var(--color-accent);
 }
 
 a {
@@ -175,7 +194,6 @@ custom-footer {
 .panel {
   padding-top: clamp(1.1rem, 3vw, 1.5rem);
   padding-bottom: clamp(1.1rem, 3vw, 1.5rem);
-  background: var(--color-surface);
 }
 
 .section-heading {
@@ -222,7 +240,14 @@ custom-footer {
 .site-star {
   width: 5rem;
   aspect-ratio: 1;
-  background: var(--color-ink);
+  background: var(--metal-gradient);
+  box-shadow:
+    var(--shine-glow),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition:
+    background-position var(--transition-fast),
+    box-shadow var(--transition-fast),
+    filter var(--transition-fast);
   clip-path: polygon(
     50% 0%,
     61% 35%,

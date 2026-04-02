@@ -8,7 +8,7 @@ homepage-project {
   padding-top: clamp(0.6rem, 3vw, 1.4rem);
   padding-bottom: clamp(1.1rem, 3vw, 1.4rem);
   border-radius: var(--radius-lg);
-  background: var(--color-paper-soft);
+  background: transparent;
   font-weight: 700;
   text-transform: uppercase;
   transition:
@@ -18,7 +18,7 @@ homepage-project {
 
 .home-project-card__link:hover {
   transform: translateX(6px);
-  background: var(--color-cream);
+  background: transparent;
 }
 
 .home-project-card__link--static {
